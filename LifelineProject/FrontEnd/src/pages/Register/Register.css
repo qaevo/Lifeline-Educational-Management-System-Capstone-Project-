@@ -1,0 +1,67 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Default text color */
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 30px 45px;
+    box-shadow: 5px 25px 35px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center; /* Center align heading */
+}
+
+.underline {
+    width: 450px;
+    height: 6px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 9px;
+    margin: 0 auto; /* Center underline */
+}
+
+.inputs {
+    margin-top: 20px;
+}
+
+/* Add styles for the inputs */
+.form-control {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #009688; /* Change border color on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 150, 136, 0.5); /* Subtle shadow on focus */
+}
+
+@media (max-width: 768.5px) {
+    .wrapper {
+        margin: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        padding: 25px;
+        margin: 20px;
+    }
+}

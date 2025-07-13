@@ -1,0 +1,86 @@
+.dropdown-menu-container {
+  overflow: hidden; /* Prevent overflow of content */
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transition for max-height and opacity */
+  max-height: 0; /* Initially hide the dropdown */
+  position: absolute; /* Position the dropdown absolutely */
+  left: auto; /* Align the dropdown to the left side */
+  width: 310px; /* Ensure the dropdown takes full width */
+  z-index: 1030; /* Make sure it appears above other content */
+  background-color: #009688; /* Set a solid background color */
+  border-top: 1px solid #009688; /* Optional: Add a subtle border */
+  border-left: 2px solid #00796b; /* Optional: Add a subtle border */
+  border-right: 2px solid #00796b; /* Optional: Add a subtle border */
+  border-bottom: 2px solid #00796b; /* Optional: Add a subtle border */
+  border-radius: 0.25rem; /* Optional: Rounded corners */
+  color: #fff;
+  opacity: 0; /* Initially hide the dropdown */
+  visibility: hidden; /* Hide dropdown from screen reader */
+}
+
+.dropdown-menu-container.show {
+  max-height: 500px; /* Set a maximum height when showing; adjust as needed */
+  opacity: 1; /* Fade in effect */
+  visibility: visible; /* Make dropdown visible for screen reader */
+}
+
+.dropdown-menu-container:not(.show) {
+  transition: max-height 0.3s ease, opacity 0.2s ease; /* Smooth transition for hiding */
+  opacity: 0; /* Fade out effect */
+  visibility: hidden; /* Hide dropdown from screen reader */
+}
+
+.list-unstyled {
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.list-unstyled li {
+  margin: 0; /* Remove margin from list items */
+}
+
+.dropdown-item {
+  margin: 10px; /* Adjust margin for spacing */
+  font-size: 1.2rem; /* Increase font size */
+  padding: 10px 15px; /* Define padding for each item */
+  transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Smooth background color and shadow transition */
+  border-radius: 0.25rem; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+.dropdown-item:not(:last-child) {
+  border-bottom: 20px solid rgba(255, 255, 255, 0.2); /* Subtle border between items */
+}
+
+.dropdown-item:hover {
+  background-color: #00796b; /* Darker background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transform: scale(1.02); /* Slightly scale up for a cleaner lift effect */
+  border-radius: 0.25rem;
+}
+
+
+/* Optional: Add focus styles for accessibility */
+.dropdown-item:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5); /* Add a focus outline */
+}
+
+  .nav-item:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+    font-size: 35px;
+    background-color: #00796b; /* Darker background for nav-item on hover */
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .nav-item .nav-link:hover {
+    color: #e0f7fa; /* Lighter text color on hover */
+  }
+
+ .nav
+ {
+  border-top: 1px solid #009688; /* Optional: Add a subtle border */
+  border-left: 2px solid #00796b; /* Optional: Add a subtle border */
+  border-right: 2px solid #00796b; /* Optional: Add a subtle border */
+  border-bottom: 2px solid #00796b; /* Optional: Add a subtle border */
+ }

@@ -1,0 +1,246 @@
+.custom-multiselect .option:hover {
+  background-color: #009688 !important;
+  color: white !important;
+}
+
+/* Custom radio button styling */
+.custom-radio .form-check-input:checked {
+  background-color: #009688; /* Change the background color of the selected radio button */
+  border-color: #009688; /* Change the border color of the selected radio button */
+}
+
+.custom-radio .form-check-input {
+  width: 1.2em;
+  height: 1.2em;
+  margin-top: 0.2em;
+  cursor: pointer;
+}
+.offcanvas-form {
+    position: absolute;
+    top: 0;
+    left: -300px; /* Adjust based on the width of your form */
+    width: 300px; /* Width of the form */
+    height: 450px;
+    padding: 1rem;
+    background-color: #fff; /* Background color of the form */
+    border: 1px solid #dee2e6; /* Optional border for the form */
+    transition: left 0.3s ease; /* Animation for sliding in */
+    z-index: 1050; /* Ensure it is above other content */
+    visibility: hidden; /* Hide the form when not in use */
+    opacity: 0; /* Make it invisible */
+  }
+  
+  .offcanvas-form.show {
+    left: 0; /* Slide in to the left */
+    visibility: visible; /* Show the form */
+    opacity: 1; /* Make it fully visible */
+  }
+  
+  .table-container {
+    flex: 1;
+    transition: margin-left 0.3s ease; /* Animation for shifting the table */
+  }
+  
+  .table-container.shifted {
+    margin-left: 300px; /* Shift the table to the right when the form is shown */
+  }
+
+  .offcanvas-form-two {
+    position: absolute;
+    top: 0;
+    left: -300px; /* Adjust based on the width of your form */
+    width: 300px; /* Width of the form */
+    height: 490x;
+    padding: 1rem;
+    background-color: #fff; /* Background color of the form */
+    border: 1px solid #dee2e6; /* Optional border for the form */
+    transition: left 0.3s ease; /* Animation for sliding in */
+    z-index: 1050; /* Ensure it is above other content */
+    visibility: hidden; /* Hide the form when not in use */
+    opacity: 0; /* Make it invisible */
+  }
+
+  .offcanvas-form-two.show {
+    left: 0; /* Slide in to the left */
+    visibility: visible; /* Show the form */
+    opacity: 1; /* Make it fully visible */
+  }
+
+
+  .top-offcanvas-form {
+    position: absolute;
+    top: -400px;/* Adjust based on the width of your form */
+    width:  100%; /* Width of the form */
+    height: 580px;
+    padding: 1rem;
+    background-color: #fff; /* Background color of the form */
+    border: 1px solid #dee2e6; /* Optional border for the form */
+    transition: top 0.4s ease; /* Animation for sliding in */
+    z-index: 900; /* Ensure it is above other content */
+    visibility: hidden; /* Hide the form when not in use */
+    opacity: 0; /* Make it invisible */
+  }
+  
+  .top-offcanvas-form.show {
+    top: 0; /* Slide in to the left */
+    visibility: visible; /* Show the form */
+    opacity: 1; /* Make it fully visible */
+  }
+  
+  .top-table-container {
+    flex: 1;
+    transition: margin-top 0.4s ease; /* Animation for shifting the table */
+  }
+  
+  .top-table-container.shifted {
+    margin-top: 590px; /* Shift the table to the bottom when the form is shown */
+  }
+  
+
+  .top2-offcanvas-form {
+    position: absolute;
+    top: -400px;/* Adjust based on the width of your form */
+    width:  100%; /* Width of the form */
+    height: 250px;
+    padding: 1rem;
+    background-color: #fff; /* Background color of the form */
+    border: 1px solid #dee2e6; /* Optional border for the form */
+    transition: top 0.4s ease; /* Animation for sliding in */
+    z-index: 900; /* Ensure it is above other content */
+    visibility: hidden; /* Hide the form when not in use */
+    opacity: 0; /* Make it invisible */
+  }
+  
+  .top2-offcanvas-form.show {
+    top: 0; /* Slide in to the left */
+    visibility: visible; /* Show the form */
+    opacity: 1; /* Make it fully visible */
+  }
+  
+  .top2-table-container {
+    flex: 1;
+    transition: margin-top 0.4s ease; /* Animation for shifting the table */
+  }
+  
+  .top2-table-container.shifted {
+    margin-top: 260px; /* Shift the table to the bottom when the form is shown */
+  }
+
+
+
+
+  .mtop-offcanvas-form {
+    border-radius: 10px;
+    position: absolute;
+    top: -400px; /* Adjust based on the width of your form */
+    width: 100%; /* Width of the form */
+    height: 350px; /* Default height */
+    padding: 1rem;
+    background-color: #fff; /* Background color of the form */
+    border: 1px solid #dee2e6; /* Optional border for the form */
+    transition: top 0.4s ease, height 0.4s ease; /* Animate top and height */
+    z-index: 900; /* Ensure it is above other content */
+    visibility: hidden; /* Hide the form when not in use */
+    opacity: 0; /* Make it invisible */
+  }
+  
+  /* Default height when no filters are applied */
+.mtop-offcanvas-form.show {
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  height: 350px; /* Default height */
+}
+
+/* Height when 1 filter is applied */
+.mtop-offcanvas-form.show.one-filter {
+  height: 390px; /* Adjust as needed */
+}
+
+/* Height when 2 or more filters are applied */
+.mtop-offcanvas-form.show.two-filters {
+  height: 430px; /* Adjust as needed */
+}
+
+/* Expanded height when "Graduation Date" is visible */
+.mtop-offcanvas-form.show.expanded {
+  height: 420px; /* Adjust as needed */
+}
+
+/* Expanded height with 1 filter */
+.mtop-offcanvas-form.show.expanded.one-filter {
+  height: 460px; /* Adjust as needed */
+}
+
+/* Expanded height with 2 or more filters */
+.mtop-offcanvas-form.show.expanded.two-filters {
+  height: 500px; /* Adjust as needed */
+}
+
+/* Default margin-top when form is shown */
+.mtop-table-container.shifted {
+  margin-top: 350px; /* Default margin-top */
+}
+
+/* Margin-top when 1 filter is applied */
+.mtop-table-container.shifted.one-filter {
+  margin-top: 390px; /* Adjust as needed */
+}
+
+/* Margin-top when 2 or more filters are applied */
+.mtop-table-container.shifted.two-filters {
+  margin-top: 430px; /* Adjust as needed */
+}
+
+/* Expanded margin-top when "Graduation Date" is visible */
+.mtop-table-container.shifted.expanded {
+  margin-top: 420px; /* Adjust as needed */
+}
+
+/* Expanded margin-top with 1 filter */
+.mtop-table-container.shifted.expanded.one-filter {
+  margin-top: 460px; /* Adjust as needed */
+}
+
+/* Expanded margin-top with 2 or more filters */
+.mtop-table-container.shifted.expanded.two-filters {
+  margin-top: 500px; /* Adjust as needed */
+}
+
+
+
+.student-data-summary {
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.data-section {
+  margin-bottom: 40px;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+
+.data-table {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    width: 100%;
+  }
+}

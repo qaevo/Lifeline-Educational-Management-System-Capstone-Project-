@@ -1,0 +1,110 @@
+.offcanvas-form {
+    position: absolute;
+    top: 0;
+    left: -300px; /* Adjust based on the width of your form */
+    width: 300px; /* Width of the form */
+    height: 100%;
+    padding: 1rem;
+    background-color: #fff; /* Background color of the form */
+    border: 1px solid #dee2e6; /* Optional border for the form */
+    transition: left 0.3s ease; /* Animation for sliding in */
+    z-index: 1050; /* Ensure it is above other content */
+    visibility: hidden; /* Hide the form when not in use */
+    opacity: 0; /* Make it invisible */
+  }
+  
+  .offcanvas-form.show {
+    left: 0; /* Slide in to the left */
+    visibility: visible; /* Show the form */
+    opacity: 1; /* Make it fully visible */
+  }
+  
+  .table-container {
+    flex: 1;
+    transition: margin-left 0.3s ease; /* Animation for shifting the table */
+  }
+  
+  .table-container.shifted {
+    margin-left: 300px; /* Shift the table to the right when the form is shown */
+  }
+
+  .offcanvas-form-two {
+    position: absolute;
+    top: 0;
+    left: -300px; /* Adjust based on the width of your form */
+    width: 300px; /* Width of the form */
+    height: 490x;
+    padding: 1rem;
+    background-color: #fff; /* Background color of the form */
+    border: 1px solid #dee2e6; /* Optional border for the form */
+    transition: left 0.3s ease; /* Animation for sliding in */
+    z-index: 1050; /* Ensure it is above other content */
+    visibility: hidden; /* Hide the form when not in use */
+    opacity: 0; /* Make it invisible */
+  }
+
+  .offcanvas-form-two.show {
+    left: 0; /* Slide in to the left */
+    visibility: visible; /* Show the form */
+    opacity: 1; /* Make it fully visible */
+  }
+
+
+  .top-offcanvas-form {
+    position: absolute;
+    top: -400px;/* Adjust based on the width of your form */
+    width:  100%; /* Width of the form */
+    height: 580px;
+    padding: 1rem;
+    background-color: #fff; /* Background color of the form */
+    border: 1px solid #dee2e6; /* Optional border for the form */
+    transition: top 0.4s ease; /* Animation for sliding in */
+    z-index: 900; /* Ensure it is above other content */
+    visibility: hidden; /* Hide the form when not in use */
+    opacity: 0; /* Make it invisible */
+  }
+  
+  .top-offcanvas-form.show {
+    top: 0; /* Slide in to the left */
+    visibility: visible; /* Show the form */
+    opacity: 1; /* Make it fully visible */
+  }
+  
+  .top-table-container {
+    flex: 1;
+    transition: margin-top 0.4s ease; /* Animation for shifting the table */
+  }
+  
+  .top-table-container.shifted {
+    margin-top: 590px; /* Shift the table to the bottom when the form is shown */
+  }
+  
+
+  .top2-offcanvas-form {
+    position: absolute;
+    top: -400px;/* Adjust based on the width of your form */
+    width:  100%; /* Width of the form */
+    height: 250px;
+    padding: 1rem;
+    background-color: #fff; /* Background color of the form */
+    border: 1px solid #dee2e6; /* Optional border for the form */
+    transition: top 0.4s ease; /* Animation for sliding in */
+    z-index: 900; /* Ensure it is above other content */
+    visibility: hidden; /* Hide the form when not in use */
+    opacity: 0; /* Make it invisible */
+  }
+  
+  .top2-offcanvas-form.show {
+    top: 0; /* Slide in to the left */
+    visibility: visible; /* Show the form */
+    opacity: 1; /* Make it fully visible */
+  }
+  
+  .top2-table-container {
+    flex: 1;
+    transition: margin-top 0.4s ease; /* Animation for shifting the table */
+  }
+  
+  .top2-table-container.shifted {
+    margin-top: 260px; /* Shift the table to the bottom when the form is shown */
+  }
